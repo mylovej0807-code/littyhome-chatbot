@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小小家｜線上聊天</title>
+  <style>
+    body { margin: 0; font-family: system-ui, 'Microsoft JhengHei', sans-serif; background: #f6f8fb; color: #253047; }
+    main { max-width: 760px; margin: 12vh auto; padding: 24px; text-align: center; }
+    h1 { font-size: clamp(28px, 5vw, 42px); }
+    p { line-height: 1.8; }
+    .hint { color: #536276; }
+    df-messenger { --df-messenger-bot-message: #e8eefc; --df-messenger-button-titlebar-color: #3569b5; --df-messenger-chat-background-color: #ffffff; --df-messenger-font-color: #253047; --df-messenger-send-icon: #3569b5; --df-messenger-user-message: #d6e7ff; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>小小家</h1>
+    <p>歡迎來到小小家！</p>
+    <p class="hint">請點選右下角的聊天圖示，開始與我們的聊天機器人對話。</p>
+  </main>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger intent="WELCOME" chat-title="牧笛音樂教室" agent-id="2f3f8192-7018-441b-bd19-bed013b424f6" language-code="zh-tw"></df-messenger>
+</body>
+</html>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="小小家"
+  agent-id="9a743617-b3b4-498a-ab82-bff4222b0a5d"
+  language-code="zh-tw"
+></df-messenger>
+</body>
+</html>
